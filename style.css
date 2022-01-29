@@ -32,7 +32,7 @@ body {
 }
 
 .grid-square:hover {
-    filter: brightness(90%);
+    background-color: rgb(195, 255, 183);
     box-shadow: 2px 2px 2px;
 
 }
@@ -48,5 +48,5 @@ body {
 
 .reset:hover {
     box-shadow: 2px 2px 2px;
-    filter: brightness(90%);
+    background-color: rgb(255, 181, 181);
 }
