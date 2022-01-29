@@ -1,3 +1,6 @@
+* {
+    font-size: 30px;
+}
 body {
     display: flex;
     gap: 1em;
@@ -7,23 +10,43 @@ body {
 }
 .grid {
     height: 310px;
-    width: 305px;
-    border: 1px solid black;
+    width: 310px;
     display: flex;
     flex-wrap: wrap;
+    gap: 0.1em;
 }
 
 .grid .grid-square {
+    cursor: pointer;
+
     background-color: rgb(255, 255, 255);
     height: 99px;
     width: 99px;
     border: 1px solid black;
-
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 1px;
+
 }
 
 .grid-square:hover {
+    filter: brightness(90%);
+    box-shadow: 2px 2px 2px;
+
+}
+
+.reset {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px;
+
+    padding: 1em;
+}
+
+.reset:hover {
+    box-shadow: 2px 2px 2px;
     filter: brightness(90%);
 }
